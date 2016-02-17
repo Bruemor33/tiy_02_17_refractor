@@ -145,7 +145,7 @@ var spanishColor = function(colorName) {
 // Put your answer below -------------------------
 var spanishColor = function(colorName) {
   var colorName = {rojo: '#ff0000', blanco: '#ffffff', azul: '#0000ff', verde: '#00ff00', negro: '#000000'};
-  return colorName.rojo;
+  return colorName.verde;
 };
 console.log(spanishColor());
 // -----------------------------------------------
@@ -335,10 +335,17 @@ console.log(accelerate(12));
 var callLater = function(timeout, callback) {
   setTimeout(callback, timeout);
 };
-
+console.log(callLater(3, 4));
 // Put your answer below -------------------------
-
-
+var callLater = function(timeout, callback) {
+  var defaultTime = 4000;
+  if (callback == undefined) {
+    return defaultTime;
+  }else{
+    setTimeout(callback, timeout);
+  }
+}
+console.log(callLater());
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
