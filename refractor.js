@@ -189,7 +189,13 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
-
+var callNtimes = function(callback, nTimes){
+  var range = _.range(nTimes);
+  _.each(range, callback);
+}
+//ok, so i need to set an interval on my function, calling it no more times than 10.
+//I could go about this by using .timeOut after the function has been called 10 times.
+//maybe try this using a loop that ends after 10?
 
 // -----------------------------------------------
 
@@ -217,7 +223,17 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
-
+// (function(){
+//   var score = 0;
+//
+//   var increaseScore = function() {
+//     score++;
+//   };
+//
+//   var decreaseScore = function() {
+//     score--;
+//   };
+// }());
 
 // -----------------------------------------------
 
