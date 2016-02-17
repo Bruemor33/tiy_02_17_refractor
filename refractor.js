@@ -253,8 +253,10 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
-
-
+var addNumbers = function(numberA, numberB) {
+  console.log(numberA + numberB);
+}
+addNumbers(2, 2);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -280,6 +282,19 @@ var accelerate = function(amount) {
 
 // Put your answer below -------------------------
 
+//We are getting the result of NaN because we are adding 0 to no other value.
+//To change this we need to pass a numerical value to our perameter.
+
+var speed = 0;
+var accelerate = function(amount){
+  if (amount){ //using an if/else statement to find out whether or not amount is defined.
+  return speed += amount;
+  }else{
+  speed = 1
+  }
+};
+
+console.log(accelerate(12));
 
 // -----------------------------------------------
 
